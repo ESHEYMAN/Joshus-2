@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contactstyle.css">
+</head>
+<body>
+  <div class="Go_Back"><a href="Mywebpage.html"><button>Go_Back to Homepage</button></a></div> 
+    <div class="kontainer">
+        <h2>Contact Form</h2>
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" placeholder="what do you want?" name="message" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+      </div>
+
+       <!-- Contact info -->
+  <section id="contact-info">
+    <div class="contact_container">
+      <div class="info">
+        <i class="fa fa-map-marker"></i>
+        <p>123 Main St, Lagos, Nigeria</p>
+      </div>
+      <div class="info">
+        <a href="https://gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+        <p>iseyemiabrahmf@gmail.com</p>
+      </div>
+      <div class="info">
+        <i class="fa fa-phone"></i>
+        <p>08136969149, 02169052549</p>
+      </div>
+      <div class="social">
+        <a href="https://twitter.com/ESHEYMAN" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.instagram.com/esheyman/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/iseyemi.abraham" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+    </div>
+  </section>
+    
+      <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+          event.preventDefault();
+          var name = document.getElementById("name").value;
+          var phone = document.getElementById("phone").value;
+          var email = document.getElementById("email").value;
+          var message = document.getElementById("message").value;
+    
+          // Send the form data to the specified email
+          var mailtoLink = "mailto:iseyemiabrahamf@gmail.com" +
+            "?subject=Contact Form Submission" +
+            "&body=Name: " + encodeURIComponent(name) +
+            "%0APhone Number: " + encodeURIComponent(phone) +
+            "%0AEmail: " + encodeURIComponent(email) +
+            "%0AMessage: " + encodeURIComponent(message);
+          window.location.href = mailtoLink;
+    
+          // Show a confirmation alert
+          alert("Form submitted!");
+    
+          // Reset the form
+          document.getElementById("contactForm").reset();
+        });
+      </script>
+
+</body>
+</html>

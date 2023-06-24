@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./simplelightbox-master/dist/simple-lightbox.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="gallery">
+        <a href="./bible.jpeg">
+            <img src="./bible.jpeg" alt="">
+        </a>
+        <a href="./femi.jpg">
+            <img src="./femi.jpg" alt="">
+        </a>
+        <a href="./femi1.jpg">
+            <img src="./femi1.jpg" alt="">
+        </a>
+        <a href="./femi2.jpg">
+            <img src="./femi2.jpg" alt="">
+        </a>
+    </div>
+
+    <script src="./simplelightbox-master/dist/simple-lightbox.js"></script>
+    <script>
+        (function() {
+            var $gallery = new SimpleLightbox('.gallery a', {});
+        })();
+    </script>
+</body>
+</html>

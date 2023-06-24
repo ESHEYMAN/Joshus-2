@@ -1,0 +1,267 @@
+:root {
+    --primary-color:var(--blue);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2, 
+h3, 
+h4,
+h5, 
+h6 {
+    color: #086e88;
+}
+
+button {
+    background-color: var(--white);
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    padding: 5px;
+}
+
+
+#Home {
+    background: linear-gradient(rgba(32, 26, 54, 0.95), rgba(22, 24, 27, 0.95)), url(knowing.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+#Home ul {
+    display: inline-flex;
+    list-style: none;
+    color: blue;
+    margin: 1px 390px;
+
+}
+
+#Home li {
+    width: 120px;
+    margin: 7px;
+    padding: 5px;
+    font-weight: bolder;
+}
+
+#Home li a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+
+blockquote {
+    color: white;
+    font-size: 23px;
+}
+
+blockquote p {
+    background-color: blue;
+    width: 130px;
+    font-size: 15px;
+}
+
+blockquote:hover {
+    transition: 0.7s;
+    cursor: pointer;
+    transform: translateY(-19px);  !important
+    transform: skewX(40deg);
+}
+
+
+blockquote p:hover {
+    background-color: wheat;
+}
+.truth {
+    margin: -85px 0px 0px 0px;
+}
+.truth:hover {
+    transform: translateY(-19px);
+    opacity: 0.8;
+    transition: 0.7s;
+    cursor: pointer;
+}
+span {
+    margin: 1px 0px 0px 925px;
+    font-size: 20px;
+    color: blue;
+    position: absolute;
+    text-decoration: underline overline dotted white;
+    text-shadow: 5px 5px 10px wheat;
+}
+
+.container {
+    background: white;
+    margin-top: 2px;
+}
+
+.container marquee {
+    color: blue;
+    font-weight: bolder;
+}
+
+.container1 {
+    background: whitesmoke;
+    width: 200px;
+    height: 200px;
+    margin-left: 910px;
+    margin-top: 10px;
+}
+
+.container1 img {
+    width: 205px;
+    height: 205px;
+    object-fit: cover;
+}
+.container1 img:hover {
+    transform: translateY(-19px);
+    opacity: 0.8;
+    transition: 0.7s;
+    cursor: pointer;
+}
+.container2 {
+    background:rgba(22, 24, 27, 0.95);
+    width: 180px;
+    height: 180px;
+    margin-left: 910px;
+    margin-top: -560px;
+}
+
+.container2 img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.container2 img:hover {
+    transform: translateY(-19px);
+    opacity: 0.8;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+/***** About *****/
+
+#About  {
+    background-image: linear-gradient(blue, white, rgb(32, 49, 95));
+    height: 100vh;
+    width: 100%;
+}
+
+.contain {
+    height: 100vh;
+    width: 50%;
+    background: white;
+}
+
+.contain img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.me {
+    background: white;
+    height: 60%;
+    width: 60%;
+    margin-left: 795px;
+    margin-top: -610px;
+    text-align: center;
+    justify-self: center;
+}
+
+.me:hover {
+    transform: translateY(-19px);
+    opacity: 0.8;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.me p {
+    font-size: 25.5px;
+    color: navy;
+    text-indent: 5px;
+    word-spacing: 8px;   
+}
+
+.this-site {
+    background: rgb(192, 206, 207);
+    height: 90px;
+    width: 500px;
+    margin-left: 750px;
+    margin-top: 15px;
+    text-align: center;
+    word-spacing: 5px;
+}
+
+.this-site p {
+    color: navy;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+.search-bar{
+    width: 100%;
+    max-width: 210px;
+    height: 35px;
+    background: rgba(225,225,225, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    backdrop-filter: blur(4px) saturate(180%);
+}
+
+.search form {
+    margin: 30px 920px;
+}
+
+
+.search form input {
+    margin-left: 10px;
+    background: transparent;
+    flex: 1;
+    outline: none;
+    border: 0;
+    color:#cac7ff;
+}
+
+.search img {
+    height: 20px;
+    width: 20px;
+    background:#58629b;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+::placeholder {
+    color: white;
+}
+
+.arrow {
+    background: red;
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    margin: -31px 1311px;
+}
+
+.arrow img {
+    object-fit: cover;
+    width: 35px;
+    height: 35px;
+}
+
+.arrow img:hover {
+    transform: translateY(-19px);
+    opacity: 0.8;
+    transition: 0.7s;
+    cursor: pointer;
+}
